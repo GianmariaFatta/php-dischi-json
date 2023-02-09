@@ -5,6 +5,12 @@ header{
 }
 
 .col-4{
-    height: 450px;
+    height: 550px;
     border:2px dashed darkred;
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
 }
