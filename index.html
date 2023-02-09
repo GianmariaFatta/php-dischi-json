@@ -39,15 +39,21 @@
   </head>
   <body>
     <div id="app">
-      <header></header>
+      <header>
+        <div class="container">
+            <div class="">
+                <img class="w-25 mt-3" src="./img/logo.svg" alt="">
+            </div>
+        </div>
+      </header>
       <div class="container">
         <div class="row flex-wrap mt-5">
           <div v-for="(disc,i) in discs" :key="i" class="col-4 p-2">
-            <div class="card d-flex justify-content-center align-items-center">
+            <div class="card d-flex text-center justify-content-center align-items-center">
               <img class="w-75 mb-3" :src=disc.poster alt="" />
-              <h4>{{disc.title}}</h4>
-              <h5>{{disc.author}}</h5>
-              <h6>{{disc.year}}</h6>
+              <h2>{{disc.title}}</h2>
+              <h4>{{disc.author}}</h4>
+              <h3>{{disc.year}}</h3>
             </div>
           </div>
         </div>
